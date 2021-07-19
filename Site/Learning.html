@@ -21,13 +21,15 @@
 </ul>
 <h4>See website</h4>
 	<p>On the repository, go to configuration and find the website, by changing the url you can access the different documents uploaded.</p>
+<br>
 
 <h3>Browser Sync</h3>
 	<p>In the corresponding folder (Site), open cmd and run the following command:</p>
-	<p>browser-sync start --server --directory --file "*"</p>
+	<p>browser-sync start --server --directory --files "*"</p>
 <hr>
 
 <h2>HTML</h2>
+
 <h3>HTML5 Tags</h3>
 	<p>The basic heading elements are given by:</p>
 	<h1>h1</h1>
@@ -37,7 +39,7 @@
 	<h5>h5</h5>
 	<h6>h6</h6>
 	<p>These are used for structure, as with CSS you can change it</p>
-	<p>Semantic elements are used to convey a meaning that is understandable for the computer and user:</p>
+	<p>Semantic elements are used to convey a meaning that is understandable for the computer and user. They might look the same, but dont give more funcitonality and are block elements:</p>
 	<header>
 		Header- Some info goes here: Company loo, tags line, navigation content-><nav>nav element- Contains links to other parts</nav>
 	</header>
@@ -52,5 +54,25 @@
 	<footer>
 		Footer tag
 	</footer>
+<br>
+<h3>Lists</h3>
+	<p>Used to group related content. It can be unordered or ordered. To create a unordered one, we use ul, each element inside li:</p>
+	<ul>
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<li>Element with subelements
+			<ul>
+				<li>Subelement 1</li>
+				<li>Subelement 2</li>
+			</ul>
+		</li>
+		<li>Last element</li>
+	</ul>
+	<p>Ordered lists use ol, with li. For a sublist, we put a list inside li.</p>
+	<ol>
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<li>Element 3</li>
+	</ol>
 </body>
 </html>
