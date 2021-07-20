@@ -10,7 +10,7 @@
 <hr>
 <h2>General</h2>
 
-<h3>GitHub</h3>
+<h3 id="git">GitHub</h3>
 <h4>Update files to repository</h4>
 	<p>Open cmd on your corresponding folder (Site). </p>
 <ul>
@@ -43,16 +43,16 @@
 	<header>
 		Header- Some info goes here: Company loo, tags line, navigation content-><nav>nav element- Contains links to other parts</nav>
 	</header>
-	<section>
+	<section id="section1">
 		Section tag
 		<article>Article tag</article>
 		<div>Regular div element</div>
 	</section>
 	<aside>
-		Aside tag- Some info related to main topic
+		Aside tag- Some info related to main topic 
 	</aside>
 	<footer>
-		Footer tag
+		Footer tag, <span>This is a span</span>
 	</footer>
 <br>
 <h3>Lists</h3>
@@ -74,5 +74,31 @@
 		<li>Element 2</li>
 		<li>Element 3</li>
 	</ol>
+<br>
+<h3>Character Entity References</h3>
+	<p>There are characters used for HTML that are also used for text, we need to help the computer differentiate between them. The main characters are: &lt; (&amp;lt), &gt; (&amp;gt), &amp; (&amp;amp)</p>
+	<p>Other entity references are: &copy;, &quot;, or if you want a part of text to break all together or not at all, using &amp;nbsp: "victory&nbsp;nor&nbsp;defeat"</p>
+	<p>Finally, to comment a part of code use &lt;!--, close with --></p>
+<br>
+<h3>Creating Links</h3>
+	<p>To indicate a link, we use &lt;a href="using a relative or absolute link" title="help get through"&gt;Text connected to link&lt;/a&gt;</p>
+	<p>The following is an example linking to itself: 
+		<a href="Learning.html" title="Same page">Click here</a>, we can also use div inside: 
+		<a href="Learning.html" title="Same page div"><div>Click here(div)</div></a></p>
+	<p>An extrnal link can be seen here:
+		<a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/kMmI7/lecture-9-creating-links" target="_blank" title="Course page">Link to course</a>, the target attribute opens the page on a new tab.</p>
+	<p>Another reference is to sections in the same webpage. To do that, add an id to the corresponding tag and in href add a #. As here:</p>
+	<ul>
+		<li><a href="#section1">section1</a></li>
+		<li><a href="#git">git</a></li>
+	</ul>
+<br>
+<h3>Displaying Images</h3>
+	<p>Use img tag pointing to a url, width and height are also relevant. An image is an inline element <img src="gato.jpg" width="300" height="235" alt="Same as title"></p>
+	<p>As well, it can refer to an external image, always specify width and tag, or it can break the layouts: <img src="https://ca-times.brightspotcdn.com/dims4/default/f246b58/2147483647/strip/true/crop/2048x1108+0+0/resize/840x454!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001" width="300" height="235"> </p>
+<hr>
+<h2>CSS</h2>
+
+
 </body>
 </html>
