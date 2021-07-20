@@ -3,6 +3,39 @@
 <head>
 	<meta charset="utf-8">
 	<title>Learning Information</title>
+	<style type="text/css">
+		h1{
+			color: blue;
+			font-size: 35px;
+			text-align: center;
+			background-color: deeppink;
+		}
+		h2{
+			color: orange;
+			font-style: italic;
+			background-color: black;
+			opacity: .6;
+		}
+		h3{
+			color: green;
+			font-style: oblique;
+			background-color: lightyellow;
+		}
+		#git{
+			color: red;
+		}
+		.original{
+			color: unset;
+			background-color: unset;
+			font-style: unset;
+			opacity: unset;
+			text-align: unset;
+		}
+		article, footer {
+			background-color: gold;
+			visibility: 0.8;
+		}
+	</style>
 </head>
 <body>
 <h1>Learning information</h1>
@@ -32,12 +65,12 @@
 
 <h3>HTML5 Tags</h3>
 	<p>The basic heading elements are given by:</p>
-	<h1>h1</h1>
-	<h2>h2</h2>
-	<h3>h3</h3>
-	<h4>h4</h4>
-	<h5>h5</h5>
-	<h6>h6</h6>
+	<h1 class="original">h1</h1>
+	<h2 class="original">h2</h2>
+	<h3 class="original">h3</h3>
+	<h4 class="original">h4</h4>
+	<h5 class="original">h5</h5>
+	<h6 class="original">h6</h6>
 	<p>These are used for structure, as with CSS you can change it</p>
 	<p>Semantic elements are used to convey a meaning that is understandable for the computer and user. They might look the same, but dont give more funcitonality and are block elements:</p>
 	<header>
@@ -98,7 +131,20 @@
 	<p>As well, it can refer to an external image, always specify width and tag, or it can break the layouts: <img src="https://ca-times.brightspotcdn.com/dims4/default/f246b58/2147483647/strip/true/crop/2048x1108+0+0/resize/840x454!/format/webp/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001" width="300" height="235"> </p>
 <hr>
 <h2>CSS</h2>
-
-
+<p>It is all about the presentation of the content, so it is understandable. </p>
+<h3>Anatomy of a CSS Rule</h3>
+	<p>It is in the following way:</p>
+	<div>p{</div>
+	<div>color: blue;</div>
+	<div>width: 200px;</div>
+	<div>}</div>
+	<p>There is usually a stylesheet, where you add all these rules. It can be directly applied in the head of the html. Check the code There are some presets on the styles, so with CSS you rewrite them.</p>
+<h3>Element, Class and ID Selectors</h3>
+	<ul>
+		<li>Element Selector. You write the tag name. It will apply the style to all the corresponding tags. <strong>p{color:blue;}</strong></li>
+		<li>Class Selector. Create a class to apply to certain stuff. <strong>.blue{color:blue;}</strong> Have to indicate in the opening tag the corresponding class without "."</li>
+		<li>id Selector. Choose the id name of something and space the value. <strong>#name{color:blue;}</strong></li>
+	</ul>
+	<p>We can group selectors, separating by a comma</p>
 </body>
 </html>
