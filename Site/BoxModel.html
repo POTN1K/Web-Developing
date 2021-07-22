@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Box Model</title>
+	<style type="text/css">
+		body {
+			background-color: #D7D5D4;
+			margin: 0;
+			padding: 0;
+		}
+		#box {
+			background-color: blue;
+		}
+
+		#content{
+			background-color: #90EE90;
+		}
+
+		h1 {
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+<h1>Box Model</h1>
+<p> In an element, there is the content, then a padding, a border and a margin. In the following part, it is colored to notice each of them. The box is <span style="color: blue;">blue</span>, border is <span style="color: orange;">orange</span>, and the content is <span style="color: #90EE90;">green</span>.</p>
+
+<p>The browser sets by default a certain margin and padding for the body, which we overwrite to see clearly what is happening.</p>
+
+<div id="box">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>In the previous case, the blue element is not seen, as both are same size and they try to fill the father tag (body). In the following, some padding is added.</p>
+
+<div id="box" style="padding:10px">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>Some border can also be added:</p>
+
+<div id="box" style="padding:10px; border:5px solid orange;">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>Finally, some margin can be added, which gives extra space on every side:</p>
+
+<div id="box" style="padding:10px; border:5px solid orange; margin: 40px;">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>However, we could also set the width and height ourselves. The height will adjust to the width depending on the needs.</p>
+
+<div id="box" style="padding:10px; border:5px solid orange; margin: 40px; width: 300px;">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>The width is not what it seems to be, as it was set to be 300px, but also need to add padding and border, which add up to all the visible area. So when specifying the height and width is of the content box. CSS3 changes it using <strong>box-sizing:border box</strong>.</p>
+
+<div id="box" style="padding:10px; border:5px solid orange; margin: 40px; width: 300px; box-sizing: border-box;">
+	<div id="content">Some Random Text</div>
+</div>
+
+<p>By doing so, our previous one now measures 300px, and not more.</p>
+</body>
+</html>
