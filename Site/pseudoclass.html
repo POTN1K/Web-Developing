@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Class</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		header li {
+			list-style: none;
+		}
+		a:link, a:visited {
+			text-decoration: none;
+			background-color: greenyellow;
+			border: 1px solid blue;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+		a:hover, a:active {
+			background-color: red;
+			color: yellow;
+		}
+		header li:nth-child(1){
+			font-size: 24px;
+		}
+		section div:nth-child(odd){
+			background-color: gray;
+		}
+		section div:nth-child(4):hover{
+			background-color: blue;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<h1>Pseudo Class Selctors</h1>
+<h2>Create a Menu</h2>
+<header>
+	<ul>
+		<li><a href="Learning.html">Home</a></li>
+		<li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/lecture/InZyk/lecture-15-pseudo-class-selectors">Course</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">PseudoClass-Info</a></li>
+	</ul>
+</header>
+	<p>:link will target the elements that take you to another page, section, etc.</p>
+	<p>:visited will target the previously visited pages.</p>
+	<p>:hover will target those on which the mouse is on.</p>
+	<p>:active will target those the user clicks but has not yet released.</p>
+	<p>nth child will target a specific element.</p>
+
+<section>
+	<h2>DIV List</h2>
+	<div>DIV 1</div>
+	<div>DIV 2</div>
+	<div>DIV 3</div>
+	<div>DIV 4</div>
+	<div>DIV 5</div>
+	<div>DIV 6</div>
+	<div>DIV 7</div>
+	<div>DIV 8</div>
+	<div>DIV 9</div>
+	<div>DIV 10</div>
+	</section>
+</body>
+</html>

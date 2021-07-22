@@ -147,13 +147,51 @@
 	</ul>
 	<p>We can group selectors, separating by a comma</p>
 <h3>Combining Selectors</h3>
-<p>Technique to combine elements. For example:</p>
-<ul>
-	<li>p.big- It will affect all paragraphs with this class</li>
-	<li>article &gt; p- Means every paragraph inside an article, as long as it is a direct child.</li>
-	<li>article p- any p inside article, doesn´t matter what level.</li>
-	<li>To specify two conditions that need to be met, such as two classes do: .class1.class2</li>
-</ul>
-<p>It applies to any selector, also classes. Applying various classes to an element is done by: <strong>class:class1 class2;</strong></p>
+	<p>Technique to combine elements. For example:</p>
+	<ul>
+		<li>p.big- It will affect all paragraphs with this class</li>
+		<li>article &gt; p- Means every paragraph inside an article, as long as it is a direct child.</li>
+		<li>article p- any p inside article, doesn´t matter what level.</li>
+		<li>To specify two conditions that need to be met, such as two classes do: .class1.class2</li>
+	</ul>
+	<p>It applies to any selector, also classes. Applying various classes to an element is done by: <strong>class:class1 class2;</strong></p>
+<h3>Pseudo-Class Selector</h3>
+	<p>Address elements that can´t be targeted with the normal selectors. An example is an element that changes when the mouse hovers on top of it. To specify it:</p>
+	<div>selector:pseudo-class{...}</div>
+	<p>Some cases of pseudo-class selctors are:</p>
+	<a href="pseudoclass.html" target="_blank">
+	<ul>
+		<li>:link</li>
+		<li>:visited</li>
+		<li>:hover</li>
+		<li>:active</li>
+		<li>:nth-child</li>
+	</ul>
+	</a>
+<h3>Style Placement</h3>
+	<p>Affects how reusable and understandable it is. It can overwrite one on each other. We can put it at the beginning of the document; inside the tag (inline styling) or linking to another one (external). The last one is done with: </p>
+	<p>&lt;link rel="stylesheet" href="location"&gt;</p>
+	<p>An example of this is the following <a href="style.css" target="_blank">page</a>, it is always added before the style tag.</p>
+<h3>Conflict Resolution</h3>
+	<p>Cascading is an algorithm used in CSS. It tells which rule wins over an element. They are the following:</p>
+	<ul>
+		<li>Origin. 
+			<ul>
+				<li>The last declaration wins. From top to bottom.</li>
+				<li>If no conflict, declarations merge.</li>
+			</ul></li>
+		<li>Inheritance. If you declare a property to one element, the children will also have that property.</li>
+		<li>Specificity. Most specific selector combiantion wins. The order on specificity is:
+			<ul>
+				<li>style="..."</li>
+				<li>ID</li>
+				<li>Class, pseudo-class, attribute</li>
+				<li># of Elements</li>
+			</ul></li>
+		<p>Check in depth when not having the desired color. If you want some property no matter what, add !important next to it-- color:gree !important;</p>
+		<p>Avoid using important unless no other choice, as mantainance gets more difficult.</p>
+	</ul>
+<h3>Styling Text</h3>
+<p>There are various properties in CSS. Some of them can be worked in the following <a href="StylingText.html">link</a></p>
 </body>
 </html>

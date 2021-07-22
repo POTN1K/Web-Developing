@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Styling Text</title>
+	<style type="text/css">
+		.style{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #0000ff;
+		font-style: italic;
+		font-weight: 800;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h1>Styling Text</h1>
+	p>Common font combinations can be found at<a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">W3Schools</a>.</p>
+	<p>When using font-family, you are relying on the user`s computer to have it installed, so a couple of them are added. At least it is important to select if serif(has curves at end) or sans-serif(simple) is wanted.</p>
+	<p>Color can be selected in hexadecimal value. First two digits are red, then green, then blue: 0000ff</p>
+	<p>Font-style chooses if you want words in italic or normal</p>
+	<p>Font weight it how bold you want it, goes from 0-900/bold.</p>
+	<p>Font-size give the pixels. The default is 16px</p>
+	<p>Text-transform allows you to change the text: capitalize, lower case, etc.</p>
+	<p>Text-align allows to put it somewhere in the page.</p>
+	<p class="style">This is a paragraph with a class applied to it, compared to the previous one.</p>
+	<h2>Relative Font-Sizing</h2>
+		<p>There are two units of relative measurement, <strong>% and em</strong>. % increases with relation to the default. em multiplies the size by the number next to it, so a 16px at 2em is 32px. In the follwing example, the relative sizes take place and can be combined.</p>
+		<div>Regular text.</div>
+		<div style="Font-size:120%;">Text with 120%, including following ones.</div>
+			<div style="Font-size: 2em;">2em Text
+				<div style="Font-size: 2em">4em Text
+					<div style="Font-size: 0.5em">2em Again</div>
+				</div>
+			</div>
+</body>
+</html>
