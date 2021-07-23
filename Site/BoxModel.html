@@ -62,6 +62,25 @@
 	<div id="content">Some Random Text</div>
 </div>
 
-<p>By doing so, our previous one now measures 300px, and not more.</p>
+<p>By doing so, our previous one now measures 300px, and not more. Box/sizing is not inherited. To apply it we need the star selector "*". It works like: *{...}</p>
+
+<p>Margins are cumulative, so a margin on a left box adds with the one on the right box. This only works horizontaly. Vertically, only the largest stays. It can be seen here:</p>
+
+<h1>H1 has a bottom-margin of 30px</h1>
+<div id="box" style="padding:10px; border:5px solid orange; width: 300px; margin-top: 20px; box-sizing: border-box;">
+	<div id="content">Top-margin of 20px</div>
+</div>
+
+<p>It appears to have a distance of 30px. In the next case, both width and height are given, though there is more text.</p>
+
+<div id="box" style="padding:10px; border:5px solid orange; width: 300px; height: 50px; box-sizing: border-box;">
+	<div id="content">Quote by Einstein, "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</div>
+</div>
+<p>Text is combined with the content-- Text is combined with the content-- Text is combined with the content</p>
+<p>To deal with this problem, we can use the property overflow, which by default is visible. With hidden it disappears, auto creates scrool bars, scroll bars puts them even if we don`t need them.</p>
+<div id="box" style="padding:10px; border:5px solid orange; width: 300px; height: 50px; box-sizing: border-box; overflow: auto;">
+	<div id="content">Quote by Einstein, "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</div>
+</div>
+
 </body>
 </html>
